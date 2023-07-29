@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>This is a Heading</h1>
+
+<p> This is the path to mp3 file</p>
+<p id="result"></p>
+
+<form action="/chatpage" enctype="multipart/form-data" method="POST">
+    <label for="sender">Name: </label><br>
+    <input type="text" name="sender" autocomplete="off"> <br><br>
+</form>
+
+<script>
+    // STORE TOKEN INTO LOCALSTORAGE
+    document.getElementById("result").innerHTML = localStorage.getItem("{{sender}}");
+</script>
+
+<form action="/" method="POST"> 
+    <input type="submit" name = "back" value="back to contact page">
+</form>
+
+</body>
+</html>
