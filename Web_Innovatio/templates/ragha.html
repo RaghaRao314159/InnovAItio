@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ragha</title>
+</head>
+<body>
+    <div style="width:100%;"> <!-- Main Div -->
+        <div style="float:left; width:50%;">
+            <pre> {{raksha_convo}} </pre>  <!-- Set Div As your requirement -->
+        </div>
+        <div style="float:right; width:50%;">
+            <pre>{{ragha_convo}}</pre>  <!-- Set Div As your requirement -->
+        </div>
+    <div>
+    <br><br>
+
+    <form action="/ragha" method="GET"> 
+        <input type="submit" name = "receive" value="Receive">
+    </form>
+
+    <br><br>
+    
+    <form action="/ragha" enctype="multipart/form-data" method="POST">
+        <label for="ragha_message">Message: </label>
+        <input type="text" name="ragha_message" autocomplete="off"> 
+        <input type="submit" value="Send">
+    </form>
+
+        
+
+    
+</body>
+</html>
