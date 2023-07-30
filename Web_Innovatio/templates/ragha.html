@@ -2,32 +2,59 @@
 <html>
 <head>
 <title>Ragha</title>
+<style>
+    .box {
+        float: "left";
+        border-radius: 20px;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 30px, 0px;
+        background-color: blanchedalmond;
+    }
+
+    .bottom-button {
+            position: fixed;
+            bottom: 20px; /* You can adjust this value to change the distance from the bottom */
+            left: 20px; /* You can adjust this value to change the distance from the right */
+        }
+    .send-button {
+        position: fixed;
+        bottom: 20px; /* You can adjust this value to change the distance from the bottom */
+        right: 20px;  /*You can adjust this value to change the distance from the right */
+    }
+</style>
 </head>
 <body>
     <div style="width:100%;"> <!-- Main Div -->
         <div style="float:left; width:50%;">
-            <pre> {{raksha_convo}} </pre>  <!-- Set Div As your requirement -->
+            <span>Friend</span>
+            {% for box in raksha_convo %}
+                <br><br><Box class="box">{{ box }}</Box> <br><br>
+            {% endfor %}
+            <!--<pre> {{raksha_convo}} </pre> -->
         </div>
-        <div style="float:right; width:50%;">
-            <pre>{{ragha_convo}}</pre>  <!-- Set Div As your requirement -->
+        <div style="float:right;">
+            <span>Me</span>
+            {% for box in ragha_convo %}
+                <br><br><Box class="box">{{ box }}</Box> <br><br>
+            {% endfor %}
+            <!--<Box>{{ragha_convo}}</Box>  Set Div As your requirement -->
         </div>
     <div>
     <br><br>
 
-    <form action="/ragha" method="GET"> 
+    <form class="bottom-button" action="/ragha" method="GET"> 
         <input type="submit" name = "receive" value="Receive">
     </form>
 
     <br><br>
     
-    <form action="/ragha" enctype="multipart/form-data" method="POST">
+    <form class="send-button" action="/ragha" enctype="multipart/form-data" method="POST">
         <label for="ragha_message">Message: </label>
         <input type="text" name="ragha_message" autocomplete="off"> 
         <input type="submit" value="Send">
     </form>
 
         
-
-    
 </body>
 </html>
