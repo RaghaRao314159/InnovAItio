@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Page Title</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
 
@@ -37,11 +38,38 @@
 <input type="file" id="upload" title="Upload File" />
 
 
-<button type="button" onclick="localStorage.clear()">clear contacts</button>
+<button type="button" onclick="localStorage.clear()">clear contacts</button> <br><br>
 
-<form action="/chatpage" method="POST"> 
+<form action="/" enctype="multipart/form-data" method="POST">
+    <label for="friend_box">Chat with: </label>
+    <input type="text" name="friend_box" autocomplete="off"> 
+    <input type="submit" value="Go to Chat">
+</form>
+
+<!--
+<script>
+    // Assuming you have set a value in localStorage
+    const myValue = localStorage.getItem("{{friend}}");
+
+    // Send the value to Flask server using AJAX (jQuery example)
+    $.ajax({
+        url: '/tryhtml',
+        type: 'POST',
+        data: { 'value': myValue },
+        success: function(response) {
+            console.log('Data sent successfully!');
+        },
+        error: function(error) {
+            console.error('Error sending data:', error);
+        }
+    });
+</script> -->
+
+<!--
+<form action="/chatpage" method="GET"> 
     <input type="submit" name="chat" value="Go to chat"> 
 </form>
+-->
 
 </body>
 </html>

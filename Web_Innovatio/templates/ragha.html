@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>Ragha</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <style>
     .box {
         float: "left";
@@ -54,7 +55,28 @@
         <input type="text" name="ragha_message" autocomplete="off"> 
         <input type="submit" value="Send">
     </form>
+    <script>
+        // Assuming you have set a value in localStorage
+        const myValue = localStorage.getItem("{{friend}}");
 
+        // Send the value to Flask server using AJAX (jQuery example)
+        $.ajax({
+            url: '/ragha',
+            type: 'POST',
+            data: { 'value': myValue },
+            success: function(response) {
+                console.log('Data sent successfully!');
+            },
+            error: function(error) {
+                console.error('Error sending data:', error);
+            }
+        });
+    </script> 
+
+    <audio controls>
+        <source src="Gen_voice.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
         
 </body>
 </html>
