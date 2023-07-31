@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, send_file
 from model import gen_voice, check
+import os
 
 app = Flask(__name__)
 
@@ -10,11 +11,13 @@ def contactpage():
             name = request.form.get('name')
             number = request.form.get('number')
             description = request.form.get('description')
-            mp3_path = request.form.get('mp3_path')
+            audio_file = request.files['audio_file']
+            # Save the uploaded file to the 'uploads' directory
+            audio_file.save(audio_file.filename)
 
-            contact = f"{mp3_path}"
+            contact = f"{audio_file.filename}"
 
-            print("ptint everything: ",name, number, description, mp3_path)
+            #print("ptint everything: ",name, number, description, mp3_path)
 
             return render_template('contactpage.html', name = name, contact = contact)
         
@@ -28,11 +31,17 @@ def contactpage():
             me_convo = []
             return render_template('me.html', friend = friend, me_convo = me_convo, friend_convo = friend_convo)
 
+        elif request.form.get('clear_audio'):
+            print ('Request has been met!')
+            for filename in os.listdir('/'):
+                print (filename)
+                if filename.endswith(".mp3"):
+        
+                    os.remove(filename)
+
     return render_template('contactpage.html')
 
 
-
-    
 @app.route('/me',methods=['POST','GET'])
 def me():
     global friend
@@ -61,7 +70,7 @@ def me():
         if len(friend_convo) != 0:
             latest_message = friend_convo[-1]
             print("final check: ",path)
-            #gen_voice(path, latest_message)
+            gen_voice(path, latest_message)
         return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo, friend = friend)
 
     return render_template('me.html', friend = friend)
@@ -87,7 +96,9 @@ def friend():
 def serve_audio():
     return send_file("Gen_voice.mp3", as_attachment=True)
 
-
+@app.route('/favicon')
+def favicon():
+    return send_file("templates/favicon.ico", as_attachment=True)
 
 if __name__ == "__main__":
     path = ""
