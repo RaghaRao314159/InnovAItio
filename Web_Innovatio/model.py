@@ -6,7 +6,7 @@ def check(abs_path):
 
 
 def gen_voice(abs_path, text):
-    set_api_key("bfe30fd852173f67e2cf38bff7e5e002")
+    set_api_key("1c1780f87b362547e1dab31485e76afb")
 
     # file = '\Users\Oyeda\Downloads\Dada_sample_audio.mp3'
     # open(file, 'r')
@@ -26,5 +26,5 @@ def gen_voice(abs_path, text):
 
     audio = generate(text=text, voice=voice)
 
-    with open('templates/Gen_voice.mp3', 'wb') as f:
+    with open('Gen_voice.mp3', 'wb') as f:
         f.write(audio)

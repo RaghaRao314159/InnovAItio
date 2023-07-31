@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Raksha</title>
+<title>friend</title>
 <style>
     .box {
         float: "left";
@@ -28,31 +28,31 @@
     <div style="width:100%;"> <!-- Main Div -->
         <div style="float:left; width:50%;">
             <span>Friend</span>
-            {% for box in ragha_convo %}
+            {% for box in me_convo %}
                 <br><br><Box class="box">{{ box }}</Box> <br><br>
             {% endfor %}
-            <!--<pre> {{raksha_convo}} </pre> -->
+            <!--<pre> {{friend_convo}} </pre> -->
         </div>
         <div style="float:right;">
             <span>Me</span>
-            {% for box in raksha_convo %}
+            {% for box in friend_convo %}
                 <br><br><Box class="box">{{ box }}</Box> <br><br>
             {% endfor %}
-            <!--<Box>{{ragha_convo}}</Box>  Set Div As your requirement -->
+            <!--<Box>{{me_convo}}</Box>  Set Div As your requirement -->
         </div>
     <div>
     <br><br>
 
-    <form class="bottom-button" action="/raksha" method="GET"> 
+    <form class="bottom-button" action="/friend" method="GET"> 
         <input type="submit" name = "receive" value="Receive">
     </form>
 
     <br><br>
     
 
-    <form class="send-button" action="/raksha" enctype="multipart/form-data" method="POST">
-        <label for="raksha_message">Message: </label>
-        <input type="text" name="raksha_message" autocomplete="off">
+    <form class="send-button" action="/friend" enctype="multipart/form-data" method="POST">
+        <label for="friend_message">Message: </label>
+        <input type="text" name="friend_message" autocomplete="off">
         <input type="submit" value="Send">
     </form>
     

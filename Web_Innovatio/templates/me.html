@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Ragha</title>
+<title>Me</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <style>
     .box {
@@ -28,31 +28,31 @@
 <body>
     <div style="width:100%;"> <!-- Main Div -->
         <div style="float:left; width:50%;">
-            <span>Friend</span>
-            {% for box in raksha_convo %}
+            <span>{{friend}}</span>
+            {% for box in friend_convo %}
                 <br><br><Box class="box">{{ box }}</Box> <br><br>
             {% endfor %}
-            <!--<pre> {{raksha_convo}} </pre> -->
+
         </div>
         <div style="float:right;">
             <span>Me</span>
-            {% for box in ragha_convo %}
+            {% for box in me_convo %}
                 <br><br><Box class="box">{{ box }}</Box> <br><br>
             {% endfor %}
-            <!--<Box>{{ragha_convo}}</Box>  Set Div As your requirement -->
+
         </div>
     <div>
     <br><br>
 
-    <form class="bottom-button" action="/ragha" method="GET"> 
+    <form class="bottom-button" action="/me" method="GET"> 
         <input type="submit" name = "receive" value="Receive">
     </form>
 
     <br><br>
     
-    <form class="send-button" action="/ragha" enctype="multipart/form-data" method="POST">
-        <label for="ragha_message">Message: </label>
-        <input type="text" name="ragha_message" autocomplete="off"> 
+    <form class="send-button" action="/me" enctype="multipart/form-data" method="POST">
+        <label for="me_message">Message: </label>
+        <input type="text" name="me_message" autocomplete="off"> 
         <input type="submit" value="Send">
     </form>
     <script>
@@ -61,7 +61,7 @@
 
         // Send the value to Flask server using AJAX (jQuery example)
         $.ajax({
-            url: '/ragha',
+            url: '/me',
             type: 'POST',
             data: { 'value': myValue },
             success: function(response) {
@@ -73,10 +73,30 @@
         });
     </script> 
 
-    <audio controls>
-        <source src="Gen_voice.mp3" type="audio/mpeg">
+    <button id="playButton">Hear recent message</button>
+
+    <audio id="audioPlayer" controls style="display: none;">
+        <source src="{{ url_for('serve_audio') }}" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+    <script>
+        // Get references to the button and audio element
+        const playButton = document.getElementById('playButton');
+        const audioPlayer = document.getElementById('audioPlayer');
+    
+        // Add a click event listener to the button
+        playButton.addEventListener('click', function() {
+          // Toggle the display property of the audio element when the button is clicked
+          if (audioPlayer.style.display === 'none') {
+            audioPlayer.style.display = 'block';
+          } else {
+            audioPlayer.style.display = 'none';
+          }
+        });
+    </script>
+
+    
         
 </body>
 </html>
