@@ -9,9 +9,16 @@
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 3px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+
+  .contact_form [type=text]:focus {
+  border: 3px solid #092a63;
   }
   
   .contact_form input[type=submit] {

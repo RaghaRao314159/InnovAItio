@@ -16,59 +16,55 @@ def contactpage():
 
             print("ptint everything: ",name, number, description, mp3_path)
 
-            return render_template('contactpage.html', name = name, contact = contact )
+            return render_template('contactpage.html', name = name, contact = contact)
         
-        else:
+        elif request.form.get('friend_box'):
             global friend
             friend = request.form.get('friend_box')
             print("this is what you typoed into the box: ", friend)
-            return render_template('me.html', friend = friend)
-
+            global friend_convo
+            global me_convo
+            friend_convo = []
+            me_convo = []
+            return render_template('me.html', friend = friend, me_convo = me_convo, friend_convo = friend_convo)
 
     return render_template('contactpage.html')
 
 
-@app.route('/chatpage',methods=['POST','GET'])
-def chatpage():
-    if request.form.get('sender'):
-        sender = request.form.get('sender')
-        return render_template('chatpage.html', sender = sender)
-    
-    if request.form.get('back'):
-        redirect(url_for('contactpage'))
-
-    return render_template('chatpage.html')
 
     
 @app.route('/me',methods=['POST','GET'])
 def me():
+    global friend
+    global me_convo
+    global friend_convo
     if 'value' in request.form:
         global path
         if request.form['value']:
             path = request.form['value']
-        # Process the value as per your requirements
-        # For example, you can store it in a database, perform some calculations, etc.
-        #print('Value received from client:', path)
-        print("initial set: ", path)
-        #gen_voice(path)
 
-    global friend_convo
-    global me_convo
+        print("initial set: ", path)
+
+    
     if request.method == 'POST':
+
+        if request.form.get('back'):
+            print("Run this ")
+            return render_template('contactpage.html')
+        
         if request.form.get('me_message'):
             me_message = request.form.get('me_message')
             me_convo.append(me_message)
-            return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo)
-    
+            return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo, friend = friend)
+
     if request.method == 'GET':
         if len(friend_convo) != 0:
             latest_message = friend_convo[-1]
             print("final check: ",path)
-            gen_voice(path, latest_message)
-        return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo)
+            #gen_voice(path, latest_message)
+        return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo, friend = friend)
 
-    return render_template('me.html', me_convo = me_convo, friend_convo = friend_convo)
-
+    return render_template('me.html', friend = friend)
 
 
 @app.route('/friend',methods=['POST','GET'])
@@ -91,9 +87,6 @@ def friend():
 def serve_audio():
     return send_file("Gen_voice.mp3", as_attachment=True)
 
-@app.route('/tryhtml', methods=['POST','GET'])
-def tryhtml():    
-    return render_template('try.html')
 
 
 if __name__ == "__main__":

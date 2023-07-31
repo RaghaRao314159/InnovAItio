@@ -4,47 +4,158 @@
 <title>Me</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <style>
-    .box {
+    .box1 {
         float: "left";
-        border-radius: 20px;
+        border-radius: 10px;
         border: 1px solid black;
-        padding: 10px;
-        margin: 30px, 0px;
-        background-color: blanchedalmond;
+        padding: 7px;
+        margin: 0px, 0px;
+        background-color: lightgrey;
+        right: 50px;
     }
 
-    .bottom-button {
-            position: fixed;
-            bottom: 20px; /* You can adjust this value to change the distance from the bottom */
-            left: 20px; /* You can adjust this value to change the distance from the right */
-        }
-    .send-button {
-        position: fixed;
-        bottom: 20px; /* You can adjust this value to change the distance from the bottom */
-        right: 20px;  /*You can adjust this value to change the distance from the right */
+    .box2 {
+        float: "left";
+        border-radius: 10px;
+        border: 1px solid black;
+        padding: 7px;
+        margin: 0px, 0px;
+        background-color: lightblue;
+        right: 50px;
     }
+  
+  .receive-button input[type=submit] {
+    width: 100%;
+    background-color: #4c6faf;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .receive-button input[type=submit]:hover {
+    background-color: #2934b6;
+  }
+
+  .receive-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+
+  }
+
+  .send-button {
+    border-radius: 5px;
+    background-color: #e5e2e2;
+    padding: 5px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+  }
+.send-button input[type=text] {
+  width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  font-size: 15px;
+  box-sizing: border-box;
+  border: 3px solid #ccc;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+.send-button input[type=text]:focus {
+  border: 3px solid #555;
+}
+
+.send-button input[type=submit] {
+    width: 100%;
+    background-color: #4cafa0;
+    color: white;
+    padding: 10px 10px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .send-button input[type=submit]:hover {
+    background-color: #45a077;
+  }
+
+.play-button {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 16px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 150px;
+}
+
+.play-button:hover {
+    opacity: 1;
+    background-color: #e99210;
+}
+
+.back-button input[type=submit] {
+    width: 100%;
+    background-color: #9d409b;
+    color: white;
+    padding: 16px 10px;
+    margin: 4px 7px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  
+  .back-button input[type=submit]:hover {
+    background-color: #c120bc;
+  }
+
+  .back-button {
+    position: fixed;
+    bottom: 20px;
+    left: 350px;
+  }
+
+
 </style>
 </head>
 <body>
-    <div style="width:100%;"> <!-- Main Div -->
+    <div style="width:100%; height:350px; overflow: auto;"> <!-- Main Div -->
         <div style="float:left; width:50%;">
             <span>{{friend}}</span>
             {% for box in friend_convo %}
-                <br><br><Box class="box">{{ box }}</Box> <br><br>
+                <br><br><Box class="box1">{{ box }}</Box> <br>
             {% endfor %}
 
         </div>
         <div style="float:right;">
             <span>Me</span>
             {% for box in me_convo %}
-                <br><br><Box class="box">{{ box }}</Box> <br><br>
+               <br> <br><Box class="box2">{{ box }}</Box> <br>
             {% endfor %}
 
         </div>
     <div>
     <br><br>
 
-    <form class="bottom-button" action="/me" method="GET"> 
+    <form class="receive-button" action="/me" method="GET"> 
         <input type="submit" name = "receive" value="Receive">
     </form>
 
@@ -73,7 +184,7 @@
         });
     </script> 
 
-    <button id="playButton">Hear recent message</button>
+    <button class = "play-button" id="playButton">Hear recent message</button>
 
     <audio id="audioPlayer" controls style="display: none;">
         <source src="{{ url_for('serve_audio') }}" type="audio/mpeg">
@@ -95,6 +206,10 @@
           }
         });
     </script>
+
+    <form action="/" class = "back-button" method="POST"> 
+        <input type="submit" name = "back" value="Go back to contact page">
+    </form>
 
     
         
