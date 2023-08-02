@@ -151,7 +151,7 @@ Install these libraries
    git clone https://github.com/RaghaRao314159/InnovAItio.git
    ```
 4. Enter your API in `Web_Innovatio/model.py`
-   ```js
+   ```py
    set_api_key('ENTER YOUR API KEY');
    ```
 
@@ -163,6 +163,9 @@ Install these libraries
 ## Usage
 
 Run flask_app.py in the Web_Innovatio directory. 
+ ```sh
+   python flask_app.py
+   ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -171,15 +174,26 @@ Run flask_app.py in the Web_Innovatio directory.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
+### Features
+- [x] Text-to-voice
+- [x] Saving Contacts 
+- [ ] Add personalised instructional voice support for the visually impaired
+- [ ] Add emoji and GIF support
 - [ ] Multi-language Support
     - [ ] Chinese
     - [ ] Spanish
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+### Marketing
+- [ ] Pilot test with visually impaired communities
+    - [ ] The World Blind Union
+    - [ ] Singapore Association of the visually handicapped
+
+### Pay wall
+- [ ] Pro plan
+    - [ ] Add more individuals in Contacts
+    - [ ] $3 USD monthly subscription
+
+See the [info pack](https://github.com/RaghaRao314159/InnovAItio/blob/67b093642f285768981b217163e14a1c2477aebe/InnovAItio.pdf) for a full run down of our plan
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,20 +216,10 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Ragha Rao - [@Github](https://twitter.com/your_username) - email@example.com
 
 Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
 
