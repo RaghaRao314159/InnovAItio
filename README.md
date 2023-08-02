@@ -115,8 +115,6 @@ _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation 
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
 * [![Elevenlabs][Elevenlabs]][Elevenlabs-url]
 * [![Flask][Flask]][Flask-url]
 * [![Python][Python]][Python-url]
