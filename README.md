@@ -107,8 +107,8 @@ This chat app solves these problems by adding the human element to text messages
 ### How to use?:
 1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
 2. Save Sam in your contacts - name, number, description and voice 
-3. Go to chat and hear Sam's text in Sam's voice.
-_Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._ 
+3. Go to chat and hear Sam's text in Sam's voice. \
+(_Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._) 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,11 +119,9 @@ This section should list any major frameworks/libraries used to bootstrap your p
 
 * [![Flask][Flask]][Flask-url]
 * [![Python][Python]][Python-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
+* [![Javascript][Javascript]][Javascript-url]
+* [![html][html]][html-url]
+* [![jinja][jinja]][jinja-url]
 * [![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -263,15 +261,11 @@ Use this space to list resources you find helpful and would like to give credit 
 [Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
 [Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org
-[Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
-[Vue-url]: https://vuejs.org/
-[Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
-[Angular-url]: https://angular.io/
-[Svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[Svelte-url]: https://svelte.dev/
-[Laravel.com]: https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white
-[Laravel-url]: https://laravel.com
-[Bootstrap.com]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
-[Bootstrap-url]: https://getbootstrap.com
+[Javascript]: https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E
+[Javascript-url]: [https://vuejs.org/](https://www.javascript.com)
+[html]: https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white
+[html-url]: https://html.com
+[jinja]: https://img.shields.io/badge/jinja-white.svg?style=for-the-badge&logo=jinja&logoColor=black
+[jinja-url]: https://jinja.palletsprojects.com/en/3.1.x/
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
