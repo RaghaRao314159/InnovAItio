@@ -108,7 +108,7 @@ This chat app solves these problems by adding the human element to text messages
 1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
 2. Save Sam in your contacts - name, number, description and voice 
 3. Go to chat and hear Sam's text in Sam's voice. \
-(_Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._) 
+_Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -117,6 +117,7 @@ This chat app solves these problems by adding the human element to text messages
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
+* [![Elevenlabs][Elevenlabs]][Elevenlabs-url]
 * [![Flask][Flask]][Flask-url]
 * [![Python][Python]][Python-url]
 * [![Javascript][Javascript]][Javascript-url]
@@ -257,6 +258,8 @@ Use this space to list resources you find helpful and would like to give credit 
 [issues-shield]: https://img.shields.io/github/issues/RaghaRao314159/InnovAItio.svg?style=for-the-badge
 [issues-url]: https://github.com/RaghaRao314159/InnovAItio/issues
 [product-screenshot]: images/screenshot.png
+[Elevenlabs]: https://img.shields.io/badge/11ElevenLabs-ff0000
+[Elevenlabs-url]: https://elevenlabs.io/speech-synthesis
 [Flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
 [Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
 [Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
