@@ -89,18 +89,25 @@ http://dada03.pythonanywhere.com/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]([https://example.com](http://dada03.pythonanywhere.com/))
+[![Product Name Screen Shot][product-screenshot]]([http://dada03.pythonanywhere.com/]))
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+Current problems with chat apps:
+* Sending voice messages may not always be convinient. Text messages remain the main form of online communication today.
+* Texts lack the ability to effectively capture the depth and neuances of communication.
+* Visually impaired individuals are unable to read text messages. Text readers read these messages in a monotone manner, not delivering an accurate representation of the message.
+     
+This chat app solves these problems by adding the human element to text messages. The text messages sent by your mother (for e.g.) can be heard in your mother's voice.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Why InnovAItio?:
+* The visually impared will finally feel empowerd and included in individual and group chats.
+* Prevents miscommunication.
+* Provide a much more personalised experience to mundane text messaging.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+How to use?:
+1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
+2. Save Sam in your contacts - name, number, description and voice 
+3. Go to chat and hear Sam's text in Sam's voice.
+   _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
