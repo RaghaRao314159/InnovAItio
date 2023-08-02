@@ -32,20 +32,24 @@ http://dada03.pythonanywhere.com/
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/RaghaRao314159/InnovAItio">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">InnovAItio</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome personalised chat app!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://lablab.ai/event/eleven-labs-ai-hackathon/innovaitio/innovaitio-the-personalised-chat-app"><strong>Hackathon Submission »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/RaghaRao314159/InnovAItio/blob/67b093642f285768981b217163e14a1c2477aebe/InnovAItio.pdf">Read More
+    .
+    <a href="https://github.com/RaghaRao314159/InnovAItio/blob/83e41ee12fd818c32c4d18c0288a21263f1761c8/InnovAItio%20Demo.mp4">View Demo</a>
     ·
+    <a href="https://github.com/RaghaRao314159/InnovAItio/blob/67b093642f285768981b217163e14a1c2477aebe/peresentation.mp4">View Presentation</a>
+    .
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
     ·
     <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
@@ -85,7 +89,7 @@ http://dada03.pythonanywhere.com/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]]([https://example.com](http://dada03.pythonanywhere.com/))
 
 There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
 
