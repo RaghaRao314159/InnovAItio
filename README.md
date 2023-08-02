@@ -89,28 +89,27 @@ http://dada03.pythonanywhere.com/
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]]([http://dada03.pythonanywhere.com/]))
+[![Product Name Screen Shot][product-screenshot]](http://dada03.pythonanywhere.com/)
 
-Current problems with chat apps:
+### Current problems with chat apps:
 * Sending voice messages may not always be convinient. Text messages remain the main form of online communication today.
 * Texts lack the ability to effectively capture the depth and neuances of communication.
 * Visually impaired individuals are unable to read text messages. Text readers read these messages in a monotone manner, not delivering an accurate representation of the message.
      
 This chat app solves these problems by adding the human element to text messages. The text messages sent by your mother (for e.g.) can be heard in your mother's voice.
 
-Why InnovAItio?:
+### Why InnovAItio?:
 * The visually impared will finally feel empowerd and included in individual and group chats.
 * Prevents miscommunication.
 * Provide a much more personalised experience to mundane text messaging.
 
-How to use?:
+### How to use?:
 1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
 2. Save Sam in your contacts - name, number, description and voice 
 3. Go to chat and hear Sam's text in Sam's voice.
-   _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._ 
+_Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._ 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 
 
 ### Built With
