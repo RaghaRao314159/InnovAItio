@@ -26,6 +26,7 @@ http://dada03.pythonanywhere.com/
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
 
 
 
@@ -116,8 +117,8 @@ _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation 
 
 This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
+* [![Flask][Flask]][Flask-url]
+* [![Python][Python]][Python-url]
 * [![Vue][Vue.js]][Vue-url]
 * [![Angular][Angular.io]][Angular-url]
 * [![Svelte][Svelte.dev]][Svelte-url]
@@ -255,11 +256,13 @@ Use this space to list resources you find helpful and would like to give credit 
 [contributors-url]: https://github.com/RaghaRao314159/InnovAItio/graphs/contributors
 [stars-shield]: https://img.shields.io/github/stars/RaghaRao314159/InnovAItio.svg?style=for-the-badge
 [stars-url]: https://github.com/RaghaRao314159/InnovAItio/stargazers
+[issues-shield]: https://img.shields.io/github/issues/RaghaRao314159/InnovAItio.svg?style=for-the-badge
+[issues-url]: https://github.com/RaghaRao314159/InnovAItio/issues
 [product-screenshot]: images/screenshot.png
-[Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
-[Next-url]: https://nextjs.org/
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
+[Flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
+[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
+[Python-url]: https://www.python.org
 [Vue.js]: https://img.shields.io/badge/Vue.js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D
 [Vue-url]: https://vuejs.org/
 [Angular.io]: https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white
