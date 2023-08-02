@@ -130,7 +130,7 @@ _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-To use the app, [Click Here](http://dada03.pythonanywhere.com/)
+To use the app, [click here](http://dada03.pythonanywhere.com/) \\
 To get a local copy up and run, follow these simple example steps.
 
 ### Prerequisites
