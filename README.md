@@ -107,7 +107,7 @@ This chat app solves these problems by adding the human element to text messages
 ### How to use?:
 1. Get a 1 to 5 min recording of your friend, (e.g. Sam)
 2. Save Sam in your contacts - name, number, description and voice 
-3. Go to chat and hear Sam's text in Sam's voice. \
+3. Go to chat and hear Sam's text in Sam's voice. \\
 _Help: Go to http://dada03.pythonanywhere.com/friend to simulate a conversation as a friend with yourself._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
